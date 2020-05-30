@@ -17,6 +17,9 @@ font_data = ExtResource( 2 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchor_right = 1.0
@@ -42,14 +45,14 @@ __meta__ = {
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Container"]
 margin_top = 262.0
-margin_right = 2302.0
+margin_right = 1870.0
 margin_bottom = 618.0
 custom_constants/separation = 15
 alignment = 1
 
 [node name="Username" type="HBoxContainer" parent="Container/VBoxContainer2"]
-margin_left = 745.0
-margin_right = 1556.0
+margin_left = 529.0
+margin_right = 1340.0
 margin_bottom = 110.0
 rect_min_size = Vector2( 800, 0 )
 size_flags_horizontal = 4
@@ -74,9 +77,9 @@ custom_fonts/font = ExtResource( 3 )
 caret_blink = true
 
 [node name="Password" type="HBoxContainer" parent="Container/VBoxContainer2"]
-margin_left = 738.0
+margin_left = 522.0
 margin_top = 125.0
-margin_right = 1563.0
+margin_right = 1347.0
 margin_bottom = 235.0
 rect_min_size = Vector2( 800, 0 )
 size_flags_horizontal = 4
@@ -102,9 +105,9 @@ secret = true
 caret_blink = true
 
 [node name="LoginButton" type="Button" parent="Container/VBoxContainer2"]
-margin_left = 1025.0
+margin_left = 809.0
 margin_top = 250.0
-margin_right = 1277.0
+margin_right = 1061.0
 margin_bottom = 356.0
 size_flags_horizontal = 4
 custom_fonts/font = ExtResource( 3 )
@@ -112,7 +115,7 @@ text = "LOGIN"
 
 [node name="Notification" type="Label" parent="Container"]
 margin_top = 668.0
-margin_right = 2302.0
+margin_right = 1870.0
 margin_bottom = 768.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 3 )
