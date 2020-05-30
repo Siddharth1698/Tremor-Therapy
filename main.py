@@ -1,14 +1,12 @@
-# main.py
+def do_connect():
+    import network
+    sta_if = network.WLAN(network.STA_IF)
+    if not sta_if.isconnected():
+        print('connecting to network...')
+        sta_if.active(True)
+        sta_if.connect('WiFi', '987654321')
+        while not sta_if.isconnected():
+            pass
+    print('network config:', sta_if.ifconfig())
 
-import machine
-import time
-
-pin = machine.Pin(2, machine.Pin.OUT)
-print("hi")
-for i in range(10):
-
-	pin.value(1)
-	time.sleep(0.5)
-	pin.value(0)
-
-	time.sleep(0.5)
+do_connect()
