@@ -12,9 +12,34 @@ We were motivated to build this project by the increasing discompforatablility o
 **Interfaces**
 
 1)Patient(User): Game developed - game files
-2)Doctor/Therapist: Android App for personal patients info and their daily gaming statistics.
+2)Doctor/Therapist: Android App for personal patients info and their daily gaming statistics - android files
+
+**In this project**
+
+1)design:contains all design related files wrt ui/ux
+2)android:contains files related to android application on doctors phone.
+3)game:game files of the project
+4)hardware:complete work done wrt iot device.
 
 **Software Used**
 
-For developing this application we used Godot gaming engine which runs under GDScript language. Here is the documentation and installation link for Godot : https://docs.godotengine.org/en/stable/index.html  
+1.For developing this application we used Godot gaming engine which runs under GDScript language. Here is the documentation and installation link for Godot : https://docs.godotengine.org/en/stable/index.html  and used firebase api for auth purpose.
+
+2.For android app we used firebase as backend and java language for developing the application.
+
+**Hardware Used**
+
+
+
+**How to deploy?**
+
+1.Download Godot.
+
+2.Go to firebase console and create an project. Use the generated API and navigate to game -> static -> firebase.gd and paste the API in the space given.
+
+3.Run the game files directly using the godot engine and play.
+
+4.For demo you can create an account by registering on main page. But we restrict that this feature is completely available for the doctor only.
+
+
 
