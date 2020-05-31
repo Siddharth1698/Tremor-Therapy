@@ -79,6 +79,10 @@ We were motivated to build this project by the increasing discompforatablility o
 8. If you want to register we have a main page for that:
 ![register](screenshots/register.png)
 
+
+**JSON format of data we recive through our IOT device**
+![json](screenshots/jsond.png)
+
 **FEEL FREE TO FORK THIS PROJECT AND USE IT FOR YOUR MEDICAL PURPOSES**
 
 
