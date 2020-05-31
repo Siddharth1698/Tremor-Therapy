@@ -13,6 +13,7 @@ We were motivated to build this project by the increasing discompforatablility o
 **Interfaces**
 
 1)Patient(User): Game developed - game files
+
 2)Doctor/Therapist: Android App for personal patients info and their daily gaming statistics - android files
 
 
@@ -37,6 +38,7 @@ We were motivated to build this project by the increasing discompforatablility o
 **Hardware Used**
 
 1)NodeMcu - ESP8266
+
 2)MPU6050 - Sensor
 
 
@@ -74,7 +76,8 @@ We were motivated to build this project by the increasing discompforatablility o
 7. If we fail in 3rd try the game is over and we get this screen:
 ![gameover](screenshots/gameover.png)
 
-
+8. If you want to register we have a main page for that:
+![register](screenshots/register.png)
 
 **FEEL FREE TO FORK THIS PROJECT AND USE IT FOR YOUR MEDICAL PURPOSES**
 
