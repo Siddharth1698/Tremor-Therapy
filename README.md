@@ -17,15 +17,17 @@ We were motivated to build this project by the increasing discompforatablility o
 2)Doctor/Therapist: Android App for personal patients info and their daily gaming statistics - android files
 
 
-**In this project**
+**In this project** (Refactored)
 
-1)design:contains all design related files wrt ui/ux
+game files of the project
 
-2)android:contains files related to android application on doctors phone.
+others:
 
-3)game:game files of the project
+1)design:contains all design related files wrt ui/ux  :Collaborated by **ANAS**
 
-4)hardware:complete work done wrt iot device.
+2)android:contains files related to android application on doctors phone. :Collaborated by **ANAS**
+
+3)hardware:complete work done wrt iot device.  :Collaborated by **RAFI**
 
 
 **Software Used**
