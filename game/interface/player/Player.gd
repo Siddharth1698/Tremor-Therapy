@@ -8,6 +8,7 @@ const JUMP_SPEED = 3000
 const WORLD_LIMIT = 4000
 
 
+
 func _physics_process(delta):
 	apply_gravity()
 	jump()
@@ -16,7 +17,10 @@ func _physics_process(delta):
 	
 func apply_gravity():
 	if position.y > WORLD_LIMIT:
-		end_game()
+		PlayerLife.life -= 1
+		get_tree().change_scene("res://interface/levels/Level1.tscn")
+		if(PlayerLife.life  == 0):
+			end_game()
 		
 	if is_on_floor():
 		motion.y = 0
@@ -36,4 +40,7 @@ func jump():
 		motion.y -= JUMP_SPEED
 
 func end_game():
+	PlayerLife.life = 3
 	get_tree().change_scene("res://interface/levels/GameOver.tscn")
+
+	

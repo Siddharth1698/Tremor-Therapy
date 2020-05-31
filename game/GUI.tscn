@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/scene4/bannerHanging.png" type="Texture" id=1]
+[ext_resource path="res://assets/scene4/coin_bronze.png" type="Texture" id=2]
+[ext_resource path="res://assets/fonts/candles_.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://GUI.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 3 )
+
+[node name="GUI" type="CanvasLayer"]
+script = ExtResource( 4 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Control/TextureRect"]
+anchor_left = 0.991
+anchor_top = 0.009
+anchor_right = 0.991
+anchor_bottom = 0.009
+margin_left = -267.72
+margin_top = 0.28
+margin_right = 0.279907
+margin_bottom = 59.28
+rect_scale = Vector2( 1, 1.5 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/TextureRect/TextureRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 58.0266
+margin_top = -28.2495
+margin_right = -189.973
+margin_bottom = 35.7505
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Control/TextureRect/TextureRect/HBoxContainer"]
+position = Vector2( 93.3586, 59.2414 )
+scale = Vector2( 1, 0.596059 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Control/TextureRect/TextureRect/HBoxContainer"]
+margin_right = 1.0
+margin_bottom = 123.0
+custom_fonts/font = SubResource( 1 )
+text = "0
+"
+align = 3
+autowrap = true

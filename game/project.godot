@@ -22,6 +22,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Firebase="*res://static/Firebase.gd"
+PlayerLife="*res://player_life.gd"
 
 [display]
 
