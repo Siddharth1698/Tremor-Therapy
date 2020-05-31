@@ -5,7 +5,7 @@ const SPEED = 1500
 const GRAVITY = 500
 const UP = Vector2(0,-1)
 const JUMP_SPEED = 3000
-const WORLD_LIMIT = 3000
+const WORLD_LIMIT = 4000
 
 
 func _physics_process(delta):
@@ -36,4 +36,4 @@ func jump():
 		motion.y -= JUMP_SPEED
 
 func end_game():
-	get_tree().quit()
+	get_tree().change_scene("res://interface/levels/GameOver.tscn")
