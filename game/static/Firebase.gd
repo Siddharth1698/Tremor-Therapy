@@ -1,6 +1,6 @@
 extends Node
 
-const API_KEY := ""
+const API_KEY := "AIzaSyBCF-Z1FmNicI5UInTG4D5545FrbFZAER0"
 
 const REGISTER_URL := "https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=%s" % API_KEY
 const LOGIN_URL := "https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=%s" % API_KEY
