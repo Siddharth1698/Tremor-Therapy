@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://interface/levels/Level1.gd" type="Script" id=1]
+[ext_resource path="res://interface/player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/scene4/plate.png" type="Texture" id=3]
+
+[node name="Level1" type="Node2D"]
+position = Vector2( -5.84399, -3.89606 )
+script = ExtResource( 1 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+
+[node name="Floor" type="StaticBody2D" parent="."]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor"]
+position = Vector2( 966.217, 685.703 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Floor"]
+position = Vector2( 0, 1 )
+polygon = PoolVector2Array( 675.478, 595.357, 818.821, 618.88, 904.827, 625.496, 1029.06, 625.496, 1151.82, 616.675, 1270.9, 593.152, 1320.15, 584.331, 1354.7, 587.271, 1362.79, 596.092, 1365.73, 612.264, 1363.52, 636.522, 1340.74, 684.303, 1316.48, 718.117, 1286.34, 746.786, 1245.17, 773.984, 1199.6, 781.335, 1084.92, 770.309, 1036.41, 759.283, 983.482, 757.077, 986.94, 858.071, 984.992, 863.915, 994.732, 972.857, 990.836, 996.233, 897.331, 1002.08, 877.851, 982.597, 893.435, 953.377, 879.799, 914.416, 895.383, 898.832, 891.487, 850.132, 907.071, 834.547, 901.227, 758.575, 733.698, 772.211, 632.401, 768.315, 581.752, 744.939, 535, 709.874, 529.156, 641.694, 548.636, 591.045, 632.401, 583.253 )

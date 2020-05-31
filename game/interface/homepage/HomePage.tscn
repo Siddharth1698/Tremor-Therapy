@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/scene2/bg.png" type="Texture" id=1]
+[ext_resource path="res://interface/homepage/HomePage.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/candles_.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 35
+font_data = ExtResource( 3 )
+
+[node name="HomePage" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 11.9836
+margin_right = 11.9836
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayButton" type="Button" parent="."]
+margin_left = 810.95
+margin_top = 276.027
+margin_right = 1062.95
+margin_bottom = 384.027
+custom_fonts/font = SubResource( 1 )
+text = "PLAY"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LearnButton" type="Button" parent="."]
+margin_left = 810.95
+margin_top = 595.588
+margin_right = 1062.95
+margin_bottom = 703.588
+custom_fonts/font = SubResource( 1 )
+text = "QUIT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuitButton" type="Button" parent="."]
+margin_left = 810.95
+margin_top = 427.819
+margin_right = 1062.95
+margin_bottom = 535.819
+custom_fonts/font = SubResource( 1 )
+text = "LEARN"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="LearnButton" to="." method="_on_LearnButton_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_QuitButton_pressed"]

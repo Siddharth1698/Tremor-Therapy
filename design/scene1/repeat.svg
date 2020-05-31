@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1366" height="768" viewBox="0 0 1366 768">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8b2fca;
+        stroke: #444b4e;
+        stroke-width: 7.41px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 41.667px;
+        fill: #ced4b5;
+        font-family: "Segoe Script";
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <path id="Rounded_Rectangle_2_copy" data-name="Rounded Rectangle 2 copy" class="cls-1" d="M581.5,355H760.787a27.5,27.5,0,0,1,27.5,27.5v3.839a27.5,27.5,0,0,1-27.5,27.5H581.5a27.5,27.5,0,0,1-27.5-27.5V382.5A27.5,27.5,0,0,1,581.5,355Z"/>
+  <text id="REPEAT" class="cls-2" x="570" y="400">REPEAT</text>
+</svg>
