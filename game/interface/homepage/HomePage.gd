@@ -1,8 +1,13 @@
 extends Control
 
-
-
-
 func _on_PlayButton_pressed():
-	var sceneToLoad = preload("res://interface/levels/Level1Inst.tscn")
-	get_tree().change_scene_to(sceneToLoad)
+	get_tree().change_scene("res://interface/levels/Level1Inst.tscn")
+
+
+
+func _on_LearnButton_pressed():
+	get_tree().change_scene("res://interface/levels/Level1Inst.tscn")
+
+
+func _on_QuitButton_pressed():
+	get_tree().change_scene("res://Main.tscn")

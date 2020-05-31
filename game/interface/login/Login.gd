@@ -19,6 +19,6 @@ func _on_HTTPRequest_request_completed(result: int, response_code: int, headers:
 		notification.text = response_body.result.error.message.capitalize()
 	else:
 		notification.text = "Sign in sucessful!"
-		var sceneToLoad = preload("res://interface/homepage/HomePage.tscn")
-		get_tree().change_scene_to(sceneToLoad)
+		
+		get_tree().change_scene("res://interface/homepage/HomePage.tscn")
 		
