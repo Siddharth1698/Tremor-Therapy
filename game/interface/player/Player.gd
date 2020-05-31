@@ -5,6 +5,7 @@ const SPEED = 1500
 const GRAVITY = 500
 const UP = Vector2(0,-1)
 const JUMP_SPEED = 3000
+const WORLD_LIMIT = 3000
 
 
 func _physics_process(delta):
@@ -14,6 +15,9 @@ func _physics_process(delta):
 	move_and_slide(motion,UP)
 	
 func apply_gravity():
+	if position.y > WORLD_LIMIT:
+		end_game()
+		
 	if is_on_floor():
 		motion.y = 0
 	else:
@@ -30,3 +34,6 @@ func move():
 func jump():
 	if Input.is_action_just_released("jump") and is_on_floor():
 		motion.y -= JUMP_SPEED
+
+func end_game():
+	get_tree().quit()
