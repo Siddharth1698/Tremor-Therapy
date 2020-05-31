@@ -1,16 +1,22 @@
-def http_get(url):
-    import socket
-    _, _, host, path = url.split('/', 3)
-    addr = socket.getaddrinfo(host, 80)[0][-1]
-    s = socket.socket()
-    s.connect(addr)
-    s.send(bytes('GET /%s HTTP/1.0\r\nHost: %s\r\n\r\n' % (path, host), 'utf8'))
-    while True:
-        data = s.recv(100)
-        if data:
-            print(str(data, 'utf8'), end='')
-        else:
-            break
-    s.close()
+from umqtt.robust import MQTTClient
+import time
+import machine as m
 
-http_get("http://micropython.org/ks/test.html")
+ubidotsToken = "BBFF-1hiiQrK8tqvkcrRaC2tfA6BkIHzEXu"
+clientID = "value"
+client = MQTTClient("clientID", "industrial.api.ubidots.com", 1883, user = ubidotsToken, password = ubidotsToken)
+pin13 = m.Pin(13, m.Pin.IN, m.Pin.PULL_UP)
+
+def publish():
+    while True:
+        client.connect()
+        lat = 6.2
+        lng = -75.56
+        var = 1
+        msg = b'{"location": {"value":%s, "context":{"lat":%s, "lng":%s}}}' % (var, lat, lng)
+        print(msg)
+        var = var + 1
+        client.publish(b"/v1.6/devices/ESP32", msg)
+        time.sleep(1)
+
+publish()
