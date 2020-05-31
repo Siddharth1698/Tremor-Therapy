@@ -58,6 +58,10 @@ We were motivated to build this project by the increasing discompforatablility o
 1.We first have to login using a username and password:
 ![login](screenshots/login.png)
 
+-> Here is the firebase user auth:
+![login](screenshots/firebase.png)
+
+
 2.We get navigated to homescreen on succesfull authentication:
 ![homescreen](screenshots/homescreen.png)
 
