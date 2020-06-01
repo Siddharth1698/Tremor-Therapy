@@ -2,7 +2,7 @@
 
 **Overview**
 
-Tremor Therapy is an interactive game using developed for helping children and teens with their therapy process for Tremors(Shaky Hands). It is intended to give the teraphist or doctor complete analytics about the ppatients by managing them remotely. Please feel free to start this repo and PR for better changes.
+Tremor Therapy is an interactive game developed for helping children and teens with their therapy process for Tremors(Shaky Hands). It is intended to give the teraphist or doctor complete analytics about the ppatients by managing them remotely. Please feel free to start this repo and PR for better changes.
 
 
 **Motivation**
