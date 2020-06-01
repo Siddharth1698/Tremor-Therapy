@@ -58,36 +58,36 @@ others:
 **How the game Works?**
 
 1.We first have to login using a username and password:
-![login](screenshots/login.png)
+![login](others/screenshots/screenshots/login.png)
 
 -> Here is the firebase user auth:
-![login](screenshots/firebase.png)
+![login](others/screenshots/screenshots/firebase.png)
 
 
 2.We get navigated to homescreen on succesfull authentication:
-![homescreen](screenshots/homescreen.png)
+![homescreen](others/screenshots/screenshots/homescreen.png)
 
 3.If we click quit we go back to login screen.
 
 4.If we click on learn then we can see instructions from therapists.
 
 5. On clicking play, we are guided to the level and instruction of that level.
-![instruction](screenshots/instruction.png)
+![instruction](others/screenshots/screenshots/instruction.png)
 
 6.Now we can proceed to play the game. We need to use the iot devicces and do the action as instructed by the therapist if done properly we can balance the ball and allow it from not falling. If the ball falls we still have lives. Total 3 lives in a try. If all 3 lives lost then we need to start over. If won we can lead to next level.
-![game](screenshots/game.png)
-![game](screenshots/game2.png)
-![game](screenshots/game3.png)
+![game](others/screenshots/screenshots/game.png)
+![game](sothers/screenshots/screenshots/game2.png)
+![game](others/screenshots/screenshots/game3.png)
 
 7. If we fail in 3rd try the game is over and we get this screen:
-![gameover](screenshots/gameover.png)
+![gameover](others/screenshots/screenshots/gameover.png)
 
 8. If you want to register we have a main page for that:
-![register](screenshots/register.png)
+![register](others/screenshots/screenshots/register.png)
 
 
 **JSON format of data we recive through our IOT device**
-![json](screenshots/jsond.png)
+![json](others/screenshots/screenshots/jsond.png)
 
 **FEEL FREE TO FORK THIS PROJECT AND USE IT FOR YOUR MEDICAL PURPOSES**
 
