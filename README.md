@@ -76,7 +76,7 @@ others:
 
 6.Now we can proceed to play the game. We need to use the iot devicces and do the action as instructed by the therapist if done properly we can balance the ball and allow it from not falling. If the ball falls we still have lives. Total 3 lives in a try. If all 3 lives lost then we need to start over. If won we can lead to next level.
 ![game](others/screenshots/screenshots/game.png)
-![game](sothers/screenshots/screenshots/game2.png)
+![game](others/screenshots/screenshots/game2.png)
 ![game](others/screenshots/screenshots/game3.png)
 
 7. If we fail in 3rd try the game is over and we get this screen:
