@@ -2,11 +2,16 @@
 
 importer="texture"
 type="StreamTexture"
-valid=false
+path="res://.import/bg2.png-fa09186bebb8ea07dde13500e4f4df75.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://assets/scene2/photo-1521220609214-a8552380c7a4.jpg"
+source_file="res://others/design/scene2/bg2.png"
+dest_files=[ "res://.import/bg2.png-fa09186bebb8ea07dde13500e4f4df75.stex" ]
+
 [params]
 
 compress/mode=0
